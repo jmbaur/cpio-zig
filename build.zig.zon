@@ -1,0 +1,6 @@
+.{
+    .name = .cpio,
+    .version = "0.1.0",
+    .fingerprint = 0x35144386ab448efb,
+    .paths = .{""},
+}
