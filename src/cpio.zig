@@ -139,7 +139,7 @@ pub fn addFile(
     var buffer: [1024]u8 = undefined;
     var reader = file.reader(io, &buffer);
 
-    try self.addEntry(&reader.interface, size, path, .File, @intFromEnum(permissions));
+    try self.addEntry(&reader.interface, size, path, .File, @backingInt(permissions));
 }
 
 pub fn addDirectory(self: *@This(), path: []const u8, perms: u32) !void {
